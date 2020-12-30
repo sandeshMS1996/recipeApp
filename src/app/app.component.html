@@ -1,0 +1,10 @@
+<app-header (featureSelector)="OnNavigate($event)"></app-header>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <app-recipes *ngIf="navigationPrompter === 'recipes'"></app-recipes>
+      <app-shopping-list *ngIf="navigationPrompter === 'shopping'"></app-shopping-list>
+    </div>
+  </div>
+</div>
