@@ -7,9 +7,12 @@
 </div>
 <div class="row">
   <div class="col-sm-12">
-    <app-recipes-item *ngFor="let i of recipes"
+    <!--<app-recipes-item *ngFor="let i of recipes"
             [Parentrecipes]="i"
                       (detailedRecipe)="OnRecieptofReciepe(i)">
+    </app-recipes-item>-->
+    <app-recipes-item *ngFor="let i of recipes"
+                      [Parentrecipes]="i">
     </app-recipes-item>
 
   </div>
